@@ -1,0 +1,38 @@
+{
+  "name": "webpack-babel-mocha-chai",
+  "version": "1.0.0",
+  "description": "Repository with minimal tools for ES6 and testing",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/register": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "chai": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.13"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --watch --progress --inline --quiet --colors --open",
+    "build": "webpack --mode development",
+    "build:prod": "webpack --mode production",
+    "test": "mocha --require @babel/register",
+    "test:watch": "mocha --watch --require @babel/register",
+    "test:coverage": "nyc mocha --require @babel/register"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.js"
+    ]
+  },
+  "author": "julien Rollin",
+  "license": "ISC"
+}
