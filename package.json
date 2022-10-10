@@ -18,7 +18,7 @@
     "nyc": "^14.1.1",
     "webpack": "^4.28.2",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.3"
   },
   "scripts": {
     "start": "webpack-dev-server --watch --progress --inline --quiet --colors --open",
