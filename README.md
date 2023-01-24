@@ -1,7 +1,6 @@
 # Boostrap Vanilla Javascript project
 
-[![Build Status](https://travis-ci.org/jrollin/vanilla-babel-mocha.svg?branch=master)](https://travis-ci.org/jrollin/vanilla-babel-mocha)
-
+[![Build Status](https://github.com/jrollin/vanilla-babel-mocha/actions/workflows/test.yml/badge.svg)](https://github.com/jrollin/vanilla-babel-mocha/actions/workflows/test.yml)
 
 ## Minimal libraries configured
 
